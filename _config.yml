@@ -1,0 +1,3 @@
+include: [ "_*" ]
+plugins:
+  - jekyll-optional-front-matter
