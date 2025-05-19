@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本功能示例合集</title>
+    <style>
+        /* 添加简单样式增强演示效果和字体实体演示样式 */
+        .entity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .entity-table td, .entity-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .entity-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== 注释示例 ==================== -->
+    <h2>1. 注释功能</h2>
+    <!-- 这个注释不会在浏览器中显示 -->
+    <p>查看网页源码可以看到此处的注释内容</p>
+    <hr>
+
+    <!-- ==================== 排版标签 ==================== -->
+    <h2>2. 标题和段落</h2>
+    <h1>这是h1标题（唯一）</h1>
+    <h2>这是h2标题 (不唯一)</h2>
+    <p>这是一个标准的段落文本，用于展示常规内容排版效果。</p>
+    <hr>
+
+    <!-- ==================== 文本格式化 ==================== -->
+    <h2>3. 文本格式化</h2>
+    <p>
+        <b>加粗文本</b> | 
+        <strong>强调文本</strong><br>
+        <i>斜体文本</i> | 
+        <em>强调斜体</em><br>
+        <del>删除线效果</del> | 
+        <u>下划线文本</u><br>
+        <li>新闻标题加点</li>
+    </p>
+    <hr>
+
+    <!-- ==================== 换行与分隔线 ==================== -->
+    <h2>4. 换行与分隔线</h2>
+    <p>第一行文本<br>强制换行后的文本</p>
+    <hr>
+
+    <!-- ==================== 路径示例 ==================== -->
+    <h2>5. 路径演示</h2>
+    <h3>相对路径图片：</h3>
+    <img src="images/demo.jpg" alt="示例图片" width="120">
+    
+    <h3>绝对路径图片：</h3>
+    <img src="https://via.placeholder.com/150" alt="网络图片示例">
+    <hr>
+
+    <!-- ==================== 超链接 ==================== -->
+    <h2>6. 超链接示例</h2>
+    <a href="https://www.example.com" target="_blank">在新标签页打开示例网站</a>
+    <br>
+    <a href="https://www.example.com" target="_self">在当前标签页直接跳转，替换原有页面</a>
+    <hr>
+
+    <!-- ==================== 多媒体 ==================== -->
+    <h2>7. 音视频嵌入</h2>
+    <h3>音频播放器：</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放
+    </audio>
+
+    <h3>视频播放器：</h3>
+    <video controls width="400">
+        <source src="video.mp4" type="video/mp4">
+        您的浏览器不支持视频播放
+    </video>
+    <!-- 媒体类型	格式	MIME 类型
+            视频	MP4	   video/mp4
+            视频	WebM   video/webm
+            视频	OGG    video/ogg
+            音频	MP3    audio/mpeg
+            音频	WAV	   audio/wav
+            音频	OGG	   audio/ogg -->
+
+    <!-- ==================== div与span ==================== -->
+    <h2>8. div与span功能演示</h2>
+    <h3>div区块示例</h3>
+    <p>这是一个用<div style="background: yellow; padding:5px">div包裹的独立区块</div>演示块级元素特性</p>
+    
+    <h3>span行内示例</h3>
+    <p>
+        这段文字包含<b><span style="color: red">红色加粗文字</span></b>，
+        以及<span style="background: lightblue">浅蓝色背景文字</span>
+    </p>
+    <hr>
+
+    <!-- ==================== 字体实体演示 ==================== -->
+    <h2>9. 特殊字符实体演示</h2>
+        <h3>常用HTML实体字符</h3>
+        <table class="entity-table">
+            <tr>
+                <th>显示效果</th>
+                <th>实体名称</th>
+                <th>实体编号</th>
+                <th>说明</th>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>&amp;lt;</td>
+                <td>&amp;#60;</td>
+                <td>小于号（用于避免与标签冲突）</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>&amp;gt;</td>
+                <td>&amp;#62;</td>
+                <td>大于号</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>&amp;amp;</td>
+                <td>&amp;#38;</td>
+                <td>与符号</td>
+            </tr>
+            <tr>
+                <td>&copy;</td>
+                <td>&amp;copy;</td>
+                <td>&amp;#169;</td>
+                <td>版权符号</td>
+            </tr>
+            <tr>
+                <td>&reg;</td>
+                <td>&amp;reg;</td>
+                <td>&amp;#174;</td>
+                <td>注册商标</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&amp;nbsp;</td>
+                <td>&amp;#160;</td>
+                <td>不间断空格</td>
+            </tr>
+            <tr>
+                <td>&#10004;</td>
+                <td>&amp;#10004;</td>
+                <td>-</td>
+                <td>Unicode符号（对勾）</td>
+            </tr>
+        </table>
+
+        <h3>实际应用示例</h3>
+        <p>
+            <!-- 段落中混合使用实体字符 -->
+            HTML标签需要写成 &lt;p&gt;段落&lt;/p&gt;<br>
+            版权所有 &copy; 2023 示例公司<br>
+            已注册商标 &reg; EXAMPLE&trade;<br>
+            多个&nbsp;&nbsp;&nbsp;空格效果
+        </p>
+    </div>
+    <hr>
+</body>
+</html>
